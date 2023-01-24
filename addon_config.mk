@@ -112,18 +112,18 @@ osx:
     ADDON_LIBS += /usr/local/lib/libglog.dylib
     
     
-	ADDON_SOURCES_EXCLUDE = libs/ceres/lib/VS
-	ADDON_SOURCES_EXCLUDE += libs/ceres/include-vs
-	ADDON_SOURCES_EXCLUDE += libs/ceres/include-vs/%
+    ADDON_SOURCES_EXCLUDE = libs/ceres/lib/VS
+    ADDON_SOURCES_EXCLUDE += libs/ceres/include-vs
+    ADDON_SOURCES_EXCLUDE += libs/ceres/include-vs/%
 
-	# when parsing the file system looking for include paths exclude this for all or
-	# a specific platform
-	ADDON_INCLUDES_EXCLUDE = libs/ceres/include-vs/%
-	ADDON_INCLUDES_EXCLUDE += libs/ceres/include-vs
-	ADDON_INCLUDES_EXCLUDE += libs/ceres/include-osx/Eigen/src/%
-	ADDON_INCLUDES_EXCLUDE += libs/ceres/lib/VS/%
-	ADDON_INCLUDES_EXCLUDE += libs/ceres/lib/VS
-	ADDON_INCLUDES_EXCLUDE += libs/ceres/include-osx/%
+    # when parsing the file system looking for include paths exclude this for all or
+    # a specific platform
+    ADDON_INCLUDES_EXCLUDE = libs/ceres/include-vs/%
+    ADDON_INCLUDES_EXCLUDE += libs/ceres/include-vs
+    ADDON_INCLUDES_EXCLUDE += libs/ceres/include-osx/Eigen/src/%
+    ADDON_INCLUDES_EXCLUDE += libs/ceres/lib/VS/%
+    ADDON_INCLUDES_EXCLUDE += libs/ceres/lib/VS
+    ADDON_INCLUDES_EXCLUDE += libs/ceres/include-osx/%
 ios:
 tvos:
 
